@@ -1,0 +1,35 @@
+.Screen{
+    position: sticky;
+    z-index: 1;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+.navbar{
+    background-color: gold;
+    height: 3rem;
+}
+.title{
+    font-family: "Lucida Handwriting", "Courier New", monospace;
+}
+
+.cartIcon{
+    position: absolute;
+    right:2%;
+}
+.wishIcon{
+    position: absolute;
+    right:6%;
+}
+
+.mod-button{
+    margin-right:2rem;
+
+}
+.loginBtn{
+    position: absolute;
+    right:8%;
+    margin-right: 2%;
+}

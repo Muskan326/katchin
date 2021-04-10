@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"shoppinghutDB.items"},{"v":{"$numberInt":"2"},"unique":true,"key":{"itemId":{"$numberInt":"1"}},"name":"itemId_1","ns":"shoppinghutDB.items","background":true}],"uuid":"10a14d2907054f19be07791813613f34"}

@@ -1,0 +1,20 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="home">
+<div class="row searchBar">
+  <div class="col-sm-3 col-md-3"></div>
+  <input type="text" class="form-control col-sm-6 col-md-6" name="searchText" [(ngModel)]="searchText" placeholder="Search For a Item Here"  au1tofocus>
+  <div class="col-sm-3 col-md-3"></div>
+</div>
+<div class="row">
+    <div *ngFor="let each of allItem | filter:searchText" class="col-sm-3 item">
+<div class="card">
+    <img src="http://localhost:3000/v1/uploads/{{each.image[0]}}" class="card-img-top" alt="..." [routerLink]="['/detail',each.itemId]">
+    <div class="card-body" [routerLink]="['/detail',each.itemId]">
+      <h5 class="card-title"><b>Name : </b>{{each.name|uppercase}}</h5>
+      <p><b>PRICE Per PIECE : </b>{{each.price}}</p>
+    </div>
+    <button class="btn btn-success" on-click="addToCart(each.itemId)">Add To Cart</button>
+  </div>
+</div>
+</div>
+</div>

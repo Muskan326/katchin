@@ -1,0 +1,20 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="cartPage">
+  <div class="row">
+    <div class="col-sm-3 col-md-3"></div>
+    <input type="text" class="form-control col-sm-6 col-md-6" name="searchText" [(ngModel)]="searchText" placeholder="Search the item here"  au1tofocus>
+    <div class="col-sm-3 col-md-3"></div>
+  </div>
+    <div *ngFor="let each of allitems| filter:searchText" class="item row">
+        <img class="col-md-4 col-sm-4" src="http://localhost:3000/{{each.image[0]}}" class="card-img-top" alt="...">
+        <div class="card-body col-md-8 col-sm-8">
+          <h5>Name of the Item : {{each.name}}</h5>
+          <p>Description : {{each.description}}</p>
+          <p> Price per Piece :{{each.price}}</p>
+          <p>Quantity of the product : {{each.qty}}</p>
+        </div>
+</div>
+<div class="text-center">
+<button type="button" class="btn btn-primary">Total Amount : {{totalCost}}</button>
+</div>
+</div>

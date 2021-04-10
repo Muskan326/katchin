@@ -1,0 +1,11 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="detailPage">
+<div class="details">
+    <h2><b>Name : </b>{{item.name|uppercase}}</h2>
+    <img src="http://localhost:3000/{{item.image[0]}}">
+    <h6><b>DESCRIPTION : </b>{{item.description}}</h6>
+    <h4><b>PRICE : </b>{{item.price}}</h4>
+</div>
+<button type="button" class="btn btn-success btn-lg addbtn" on-click="addToCart()">Add To Cart</button><br>
+<button class="btn btn-primary btn-lg addbtn" [routerLink]="['/home']">Home</button>
+</div>

@@ -1,0 +1,28 @@
+.detailPage{
+    overflow: hidden;
+}
+.details{
+    border:0.1rem solid grey;
+    padding:1%;
+    width: 50%;
+}
+.addbtn,.details{
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+img {
+    width:15rem;
+    height:10rem
+  }
+
+  @media screen and (max-width:550px){
+      img{
+          width:100%;
+      }
+      .details{
+          width: 100%;
+          margin-left: 2%;
+          margin-right: 2%;
+      }
+  }
